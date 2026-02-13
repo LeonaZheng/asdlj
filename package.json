@@ -1,0 +1,27 @@
+{
+  "name": "valentine-app",
+  "version": "1.0.0",
+  "description": "Will you be my Valentine? - packaged as a desktop app (Electron)",
+  "main": "main.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.example.valentine",
+    "productName": "Valentine App",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "buildResources": "build"
+    }
+  }
+}
